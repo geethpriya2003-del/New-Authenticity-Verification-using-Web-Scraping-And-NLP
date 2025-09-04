@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Fake News Detection</h1>
+        <form action="/result" method="post">
+            <label for="news_title">Enter News Title:</label>
+            <input type="text" id="news_title" name="news_title" required>
+            <button type="submit">Check</button>
+        </form>
+    </div>
+</body>
+</html>
